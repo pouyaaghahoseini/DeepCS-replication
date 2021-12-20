@@ -1,0 +1,1 @@
+takes number returns the square returns the sum two decimal numbers binary digits constructs all the necessary attributes for the person object prints the persons name and age constructs all the necessary attributes for the person object prints the persons name and age reads graph data from the given file

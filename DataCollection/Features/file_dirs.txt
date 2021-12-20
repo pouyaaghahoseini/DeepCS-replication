@@ -1,0 +1,1 @@
+/Users/pouya/Documents/Github/deep-code-search/DataCollection/Extracted/test/sample_new.py

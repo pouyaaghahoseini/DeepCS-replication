@@ -1,17 +1,4 @@
-# This script allows to crawl information and repositories from
-# GitHub using the GitHub REST API (https://developer.github.com/v3/search/).
-#
-# Given a query, the script downloads for each repository returned by the query its ZIP file.
-# In addition, it also generates a CSV file containing the list of repositories queried.
-# For each query, GitHub returns a json file which is processed by this script to get information
-# about repositories.
-#
-# The GitHub API limits the queries to get 100 elements per page and up to 1,000 elements in total.
-# To get more than 1,000 elements, the main query should be splitted in multiple subqueries
-# using different time windows through the constant SUBQUERIES (it is a list of subqueries).
-#
-# As example, constant values are set to get the repositories on GitHub of the user 'rsain'.
-
+#(https://developer.github.com/v3/search/).
 
 #############
 # Libraries #
@@ -32,8 +19,8 @@ QUERY = ""  # The personalized query (for instance, to get repositories from use
 SUB_QUERIES = ["created%3A>%3D2017+stars%3A>1000+language%3APython"]  # Different sub-queries if you need to collect more than 1000 elements
 PARAMETERS = "&per_page=100"  # Additional parameters for the query (by default 100 items per page)
 DELAY_BETWEEN_QUERIES = 10  # The time to wait between different queries to GitHub (to avoid be banned)
-OUTPUT_FOLDER = "../Raw-Code/"  # Folder where ZIP files will be stored
-OUTPUT_CSV_FILE = "../Raw-Code/repositories.csv"  # Path to the CSV file generated as output
+OUTPUT_FOLDER = "/Users/pouya/Documents/Github/deep-code-search/DataCollection/Code-Repoes/"  # Folder where ZIP files will be stored
+OUTPUT_CSV_FILE = "/Users/pouya/Documents/Github/deep-code-search/DataCollection/Code-Repoes/repositories.csv"  # Path to the CSV file generated as output
 
 
 #############
